@@ -1,3 +1,4 @@
+import { Menu } from '@/components/menu/menu';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
