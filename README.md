@@ -136,3 +136,13 @@ import '@testing-library/jest-dom';
 ```
 module.exports = 'test-file-stub';
 ```
+
+
+## Autores
+####  Desenvolvimento:
+Debora Sousa
+
+#### Design do projeto
+DevinHouse
+
+https://www.figma.com/file/4oDPtiefH9ZCQ17RU9JZQz/Projeto-DevInHouse?type=design&node-id=0-1&mode=design&t=bU0dw3hnvzRANQUB-0

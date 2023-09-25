@@ -2,6 +2,7 @@ import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { Layout } from '@/components/layout/layout';
+import { DataProvider } from '@/context/ApiDataContext';
 
 type MenuItems = {
   [key: string]: string;
@@ -17,9 +18,11 @@ export default function App({ Component, pageProps }: AppProps) {
 
   const menuText = getMenuText(router.asPath);
   return (
-    <Layout currentPath={router.asPath} menuText={menuText}>
-      <Component {...pageProps} />
-    </Layout>
+    <DataProvider>
+      <Layout currentPath={router.asPath} menuText={menuText}>
+        <Component {...pageProps} />
+      </Layout>
+    </DataProvider>
   );
 }
 

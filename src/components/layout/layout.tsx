@@ -16,7 +16,9 @@ export const Layout = ({ children, currentPath, menuText }: LayoutProps) => {
       </header>
       <main className="min-h-screen min-w-full">
         <HeaderTitle title={menuText} />
-        <div className="pt-12 pl-12">{children}</div>
+        <div className="pt-12 pb-12 pr-12 pl-12 min-h-screen max-w-4xl lg:max-w-6xl ">
+          {children}
+        </div>
       </main>
     </div>
   );

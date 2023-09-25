@@ -33,7 +33,7 @@ export const LinkButton = ({
         passHref
         onClick={handleLinkClick}
         className={`${buttonClasses} ${
-          isActive ? 'bg-teal-400' : 'bg-slate-50 text-[#899097] '
+          isActive ? 'bg-teal-400' : 'bg-slate-50 text-[#9fa5ac] '
         }`}
       >
         {icon && <span className="mr-4">{icon}</span>}
